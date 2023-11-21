@@ -1,7 +1,8 @@
 "use strict";
 function makeTransaction(quantity, pricePerDroid) {
+  let totalPrice = quantity * pricePerDroid;
   return console.log(
-    `You ordered ${quantity} droids worth ${pricePerDroid} credits!`
+    `You ordered ${quantity} droids worth ${totalPrice} credits!`
   );
 }
 makeTransaction(5, 3000); // "You ordered 5 droids worth 15000 credits!"
